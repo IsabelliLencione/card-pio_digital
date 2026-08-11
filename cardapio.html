@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sabor da Vila | Cardápio</title>
+
+    <meta name="theme-color" content="#4E342E" />
+
+    <link rel="stylesheet" href="./style.css" />
+      <link rel="manifest" href="./manifest.webmanifest" />
+  </head>
+
+  <body class="app-page">
+    <header class="app-header">
+      <a class="brand" href="./cardapio.html" aria-label="Início do cardápio">
+        <img src="./icons/icon-192.png" alt="" class="brand-icon" />
+
+        <span>
+          <strong>Sabor da Vila</strong>
+          <small>Cardápio digital</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#destaques">Destaques</a>
+        <a href="#pratos">Pratos</a>
+        <a href="#sobremesas">Sobremesas</a>
+      </nav>
+
+      <div class="cart-indicator" aria-live="polite">
+        Carrinho <strong id="cart-count">0</strong>
+      </div>
+    </header>
+
+    <main class="app-container">
+      <section class="hero" id="destaques">
+        <div>
+          <p class="eyebrow">Feito para compartilhar</p>
+          <h1>Sabores simples, preparados com cuidado.</h1>
+          <p>
+            Escolha seus pratos favoritos e monte seu pedido. Neste exemplo, o
+            carrinho é apenas uma interação simples para demonstrar que a
+            aplicação já possui comportamento web.
+          </p>
+        </div>
+
+        <div class="hero-badge" aria-hidden="true">
+          <span>🍽️</span>
+          <strong>Menu do dia</strong>
+        </div>
+      </section>
+
+      <section class="menu-section" id="pratos">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Cardápio</p>
+            <h2>Pratos principais</h2>
+          </div>
+
+          <p>Opções rápidas para almoço ou jantar.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="food-visual food-burger" aria-hidden="true">🍔</div>
+            <div class="menu-card-content">
+              <div>
+                <h3>Hambúrguer Artesanal</h3>
+                <p>
+                  Pão brioche, carne, queijo, cebola caramelizada e molho da
+                  casa.
+                </p>
+              </div>
+
+              <div class="menu-card-footer">
+                <strong>R$ 29,90</strong>
+                <button class="add-button" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="food-visual food-lasagna" aria-hidden="true">🍝</div>
+            <div class="menu-card-content">
+              <div>
+                <h3>Lasanha da Casa</h3>
+                <p>
+                  Massa artesanal, molho bolonhesa, queijo e finalização
+                  gratinada.
+                </p>
+              </div>
+
+              <div class="menu-card-footer">
+                <strong>R$ 34,90</strong>
+                <button class="add-button" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="food-visual food-risotto" aria-hidden="true">🍚</div>
+            <div class="menu-card-content">
+              <div>
+                <h3>Risoto de Cogumelos</h3>
+                <p>Arroz arbóreo, cogumelos selecionados e queijo parmesão.</p>
+              </div>
+
+              <div class="menu-card-footer">
+                <strong>R$ 37,90</strong>
+                <button class="add-button" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="food-visual food-pizza" aria-hidden="true">🍕</div>
+            <div class="menu-card-content">
+              <div>
+                <h3>Pizza Marguerita</h3>
+                <p>Molho de tomate, muçarela, tomate fresco e manjericão.</p>
+              </div>
+
+              <div class="menu-card-footer">
+                <strong>R$ 41,90</strong>
+                <button class="add-button" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-section" id="sobremesas">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Para finalizar</p>
+            <h2>Bebidas e sobremesas</h2>
+          </div>
+        </div>
+
+        <div class="menu-grid menu-grid-small">
+          <article class="menu-card">
+            <div class="food-visual food-juice" aria-hidden="true">🥤</div>
+            <div class="menu-card-content">
+              <div>
+                <h3>Suco Natural</h3>
+                <p>Escolha entre laranja, limão ou frutas vermelhas.</p>
+              </div>
+
+              <div class="menu-card-footer">
+                <strong>R$ 9,90</strong>
+                <button class="add-button" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="food-visual food-brownie" aria-hidden="true">🍫</div>
+            <div class="menu-card-content">
+              <div>
+                <h3>Brownie com Sorvete</h3>
+                <p>Brownie de chocolate servido quente com sorvete de creme.</p>
+              </div>
+
+              <div class="menu-card-footer">
+                <strong>R$ 18,90</strong>
+                <button class="add-button" type="button">Adicionar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>Sabor da Vila · Exemplo didático de aplicação web responsiva + PWA</p>
+    </footer>
+
+    <!--
+    Este script não participa da instalação do PWA.
+    Ele existe apenas para deixar o cardápio com uma interação mínima.
+  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
